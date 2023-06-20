@@ -1,0 +1,9 @@
+.invalid {
+    border-color: red;
+}
+
+.error {
+    font-size: 12px;
+    font-family: sans-serif;
+    color: red;
+}
