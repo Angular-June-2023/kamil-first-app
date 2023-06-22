@@ -5,5 +5,11 @@
 .error {
     font-size: 12px;
     font-family: sans-serif;
-    color: red;
+    color: #ef4444;
+}
+
+.input {
+    background-color: #bae6fd;
+    border: none;
+    border-radius: 100px;
 }
