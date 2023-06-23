@@ -1,1 +1,20 @@
-<p>cv works!</p>
+<div class="default-section skills">
+    <label for="">My Skills</label>
+    <ul class="list" *ngFor="let skill of skills; index as i">
+        <li>{{ i + 1 +'. ' + skill }}</li>
+    </ul>
+    </div>
+<div class="default-section">
+    <label for="">My experience</label>
+    <ul *ngFor="let exp of experience | keyvalue">
+        <p><strong>{{ exp.key + ': ' }}</strong></p>
+        <p>{{ exp.value }}</p>
+    </ul>
+</div>
+<div class="default-section">
+    <label for="">Education</label>
+    <ul *ngFor="let edu of education | keyvalue">
+        <p><strong>{{ edu.key + ': ' }}</strong></p>
+        <p>{{ edu.value }}</p>
+    </ul>
+</div>
