@@ -1,15 +1,26 @@
-<h1>first-app</h1>
+<div class="header">
+  <div class="header-image">
+    <img routerLink="/home" src="../assets/angular_logo.png" alt="Header image">
+    <h1>first-app</h1>
+  </div>
+  
+  <ng-container *ngIf="name">
+    <h2>Hello {{ name }}. Enjoy the content!</h2>
+  </ng-container> 
+</div>
 
-<div *ngIf="name">
-  <h2>Hello, {{ name }}!</h2>
-</div> 
-
-<nav class="navbar">
-  <button mat-raised-button routerLink="/cv">CV</button>
-  <button mat-raised-button routerLink="/about-me">About Me</button>
-  <button mat-mini-fab extended color="accent" routerLink="/home">
-    Home
-  </button>
-
-</nav>
-<router-outlet></router-outlet>
+<main class="main">
+  <aside>
+    <nav class="navbar">
+      <button mat-raised-button extended color="accent" routerLink="/home">
+        Home
+      </button>
+      <button mat-raised-button routerLink="/cv">CV</button>
+      <button mat-raised-button routerLink="/about-me">About Me</button>
+    </nav>
+  </aside>
+  
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+</main>

@@ -1,5 +1,36 @@
-.navbar {
-    margin-bottom: 50px;
+.header {
+    padding: 20px;
     display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+    .header {
+        display: grid;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.header-image {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 48px;
+}
+
+.navbar {
+    display: grid;
     gap: 16px;
 }
