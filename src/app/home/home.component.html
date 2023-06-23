@@ -1,26 +1,24 @@
 <form class="form" [formGroup]="nameForm" (ngSubmit)="onSubmit()">
-    <div class="nameField">
-      <label class="label">Insert your name: </label>
-      <input 
-        type="text" 
-        class="input" 
-        formControlName="name"
-        [class.invalid]="
-          nameForm.get('name')?.invalid &&
-          (nameForm.get('name')?.dirty ||
-          nameForm.get('name')?.touched || 
-          isSubmitted)"
-      />
-      <span *ngIf="
-        nameForm.get('name')?.hasError('required') &&
+  <div class="form-div">
+    <label class="label">Insert your name: </label>
+    <input 
+      type="text" 
+      class="input" 
+      formControlName="name"
+      [class.invalid]="
+        nameForm.get('name')?.invalid &&
         (nameForm.get('name')?.dirty ||
         nameForm.get('name')?.touched || 
         isSubmitted)"
-        class="error"
-        >This field is required</span>
-  
-    </div>
+    />
+    <span *ngIf="
+      nameForm.get('name')?.hasError('required') &&
+      (nameForm.get('name')?.dirty ||
+      nameForm.get('name')?.touched || 
+      isSubmitted)"
+      class="error"
+      >This field is required</span>
+  </div>
     <button type="submit" mat-raised-button class="button">Submit</button>
   </form>
-  <div *ngIf="true"> </div>
   
