@@ -1,0 +1,9 @@
+<div class="hobbies-page">
+    <label>My hobbies are:</label>
+    <div class="list-container">
+        <ul class="hobby-list" *ngFor="let hobby of hobbies">
+            <li class="list-item">{{ hobby }}</li>
+        </ul>
+    </div>
+</div>
+<button mat-raised-button (click)="goBack()">Go back</button>

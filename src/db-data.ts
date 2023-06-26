@@ -18,3 +18,5 @@ export const EDUCATION: any = {
     'University': 'University of Michigan',
     'Duration': '2005-2010'
 }
+
+export const HOBBIES: string[] = [ 'drawing portraits', 'playing the guitar', 'playing the saxophone']
