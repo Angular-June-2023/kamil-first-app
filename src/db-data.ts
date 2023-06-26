@@ -20,3 +20,5 @@ export const EDUCATION: any = {
 }
 
 export const HOBBIES: string[] = [ 'drawing portraits', 'playing the guitar', 'playing the saxophone']
+
+export const INTERESTS: string[] = [ 'interest1', 'interest2', 'interest3', 'interest4', 'interest5', 'interest6' ]
