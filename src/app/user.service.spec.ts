@@ -13,4 +13,15 @@ describe('UserService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should set field to the desired string', (done) => {
+    const name = 'name';
+    
+    service.name$.subscribe(value => {
+      expect(value).toBe(name);
+      done();
+    });
+
+    service.setField(name);
+  });
 });
